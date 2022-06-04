@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">
+    <title>Тест</title>
+    <link rel="stylesheet" href="static_file/semantic.min.css" />
+    <script src="static_file/jquery.min.js"></script>
+    <script src="static_file/semantic.min.js"></script>
+    <script src="/script2.js" defer></script>
+</head>
+
+<body>
+
+
+    <style>
+        .block-1 {
+            height: 50%;
+        }
+
+        .block-2 {
+            height: 100%;
+        }
+
+        .ui.massive.button,
+        .ui.massive.buttons .button,
+        .ui.massive.buttons .or {
+            font-size: 50px;
+        }
+
+        .block-4 {
+            height: 100%;
+        }
+    </style>
+
+    <div class="ui three column grid block-1">
+
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_1">
+                <i class="heart icon"></i>
+                1
+            </button>
+        </div>
+
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_2">
+                <i class="heart icon"></i>
+                2
+            </button>
+        </div>
+
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_3">
+                <i class="heart icon"></i>
+                3
+            </button>
+        </div>
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_4">
+                <i class="heart icon"></i>
+                4
+            </button>
+        </div>
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_5">
+                <i class="heart icon"></i>
+                5
+            </button>
+        </div>
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_6">
+                <i class="heart icon"></i>
+                6
+            </button>
+        </div>
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_2_6">
+                <i class="heart icon"></i>
+                2+6
+            </button>
+        </div>
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button button m_3_5">
+                <i class="heart icon"></i>
+                3+5
+            </button>
+        </div>
+
+        <div class="column">
+            <button class="block-4 circular fluid massive ui labeled icon green button m_4_6">
+                <i class="heart icon"></i>
+                4+6
+            </button>
+        </div>
+    </div>
+
+    <div class="ui two column grid block-1">
+
+
+        <div class="column">
+            <button class="block-2  fluid massive ui labeled icon green button slow">
+                <i class="bicycle icon"></i>
+                Медленнее
+            </button>
+        </div>
+
+
+        <div class="column">
+            <button class="block-2  fluid massive ui labeled icon green button fast">
+                <i class="shipping fast icon"></i>
+                Быстрее
+            </button>
+        </div>
+
+
+        <div class="column">
+            <button class="block-2  fluid massive ui labeled icon green button shorter">
+                <i class="sort amount down icon"></i>
+                Короче
+            </button>
+        </div>
+        <div class="column">
+            <button class="block-2  fluid massive ui labeled icon green button longer">
+                <i class="sort amount up icon"></i>
+                Длиннее
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="ui two column grid">
+        <div class="column">
+            <button onclick='cmd.push("01 06 00 65 00 00"); Pattern_mode();'
+                class=" fluid massive ui labeled icon green button">
+
+            </button>
+        </div>
+
+        <div class="column">
+            <button onclick='cmd.push("01 06 00 65 00 01"); Pattern_mode();'
+                class=" fluid massive ui labeled icon green button">
+                Продолжить
+            </button>
+
+        </div>
+    </div>
+
+</body>
+
+
+
+<script>
+    $('.slow.button').click(function () {
+        Test5();
+    });
+    $('.fast.button').click(function () {
+        Test6();
+    });
+    $('.shorter.button').click(function () {
+        Test7();
+    });
+    $('.longer.button').click(function () {
+        Test8();
+    });
+
+
+    $('.longer.button').click(function () {
+        Test8();
+    });
+
+
+
+    $('.m_1.button').click(function () {
+        cmd.push("01 06 00 68 00 01");
+        Pattern_mode();
+    });
+
+    $('.m_2.button').click(function () {
+        cmd.push("01 06 00 68 00 02");
+        Pattern_mode();
+    });
+
+    $('.m_3.button').click(function () {
+        cmd.push("01 06 00 68 00 03");
+        Pattern_mode();
+    });
+
+    $('.m_4.button').click(function () {
+        cmd.push("01 06 00 68 00 04");
+        Pattern_mode();
+    });
+
+    $('.m_5.button').click(function () {
+        cmd.push("01 06 00 68 00 05");
+        Pattern_mode();
+    });
+
+    $('.m_6.button').click(function () {
+        cmd.push("01 06 00 68 00 06");
+        Pattern_mode();
+    });
+
+    $('.m_2_6.button').click(function () {
+        cmd.push("01 06 00 68 00 07");
+        Pattern_mode();
+    });
+
+    $('.m_3_5.button').click(function () {
+        cmd.push("01 06 00 68 00 08");
+        Pattern_mode();
+    });
+
+    $('.m_4_6.button').click(function () {
+        cmd.push("01 06 00 68 00 09");
+        Pattern_mode();
+    });
+
+
+
+
+
+
+
+</script>
+
+
+
+</html>
